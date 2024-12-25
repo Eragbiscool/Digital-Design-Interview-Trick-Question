@@ -35,7 +35,7 @@ module not_gate (
     input in1;
     output out1;
 
-    assign out1 = in1 : 1'b0 : 1'b1;    // This will give "out1 = 0.in1 + 1.in1` "
+    assign out1 = in1 ? 1'b0 : 1'b1;    // This will give "out1 = 0.in1 + 1.in1` "
 
 endmodule
 
